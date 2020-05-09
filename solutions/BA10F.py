@@ -1,5 +1,6 @@
 import sys
 
+
 def is_transition_valid(state1, state2, end_idx):
     ''' Is Transition Valid (Non-forbidden)
     Function to determine if the transition 
@@ -30,11 +31,12 @@ def is_transition_valid(state1, state2, end_idx):
             return True
 
     return False
-    
+
+
 def print_matrices(*argv, delim = "\t", separator = "--------"):
     ''' Function for printing multiple matrices
     Prints each matrix (stored as a dictionary) in 
-    tab-delimited format (default). Seperates the 
+    tab-delimited format (default). Separates the
     matrices with '--------' (default).
     '''
 
@@ -68,6 +70,7 @@ def print_matrices(*argv, delim = "\t", separator = "--------"):
             print(separator)
 
     return None
+
 
 def ProfileHMM(alignment, alphabet, insertion_threshold, pseudocount):
     ''' The Profile HMM with Pseudocounts Problem
@@ -244,6 +247,7 @@ def ProfileHMM(alignment, alphabet, insertion_threshold, pseudocount):
                 emission_matrix[state][symbol] = val
     
     return transition_matrix, emission_matrix
+
 
 if __name__ == "__main__":
 

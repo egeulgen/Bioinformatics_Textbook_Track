@@ -1,5 +1,5 @@
 import sys
-import HMMProfile_pseudocount
+from BA10F import ProfileHMM
 
 class Viterbi_Graph:
     ''' Viterbi Graph Structure
@@ -264,7 +264,7 @@ if __name__ == "__main__":
     for i in range(6, len(tmp)):
         alignment.append(tmp[i])
 
-    transition_matrix, emission_matrix = HMMProfile_pseudocount.ProfileHMM(alignment, alphabet, insertion_threshold, pseudocount)
+    transition_matrix, emission_matrix = ProfileHMM(alignment, alphabet, insertion_threshold, pseudocount)
 
     ViterbiGraph = Viterbi_Graph()
     optimal_hidden_path = ViterbiGraph.AlignmentWithProfileHMM(x, transition_matrix, emission_matrix)

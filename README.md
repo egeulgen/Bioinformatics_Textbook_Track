@@ -1,6 +1,10 @@
 # Rosalind Bioinformatics Stronghold
 :rocket: Solutions for the Bioinformatics Textbook Track Problems from Rosalind 
 
+1. [Compute the Number of Times a Pattern Appears in a Text](solutions/BA1A.py)
+
+
+
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)

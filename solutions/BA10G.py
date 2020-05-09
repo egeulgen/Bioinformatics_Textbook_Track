@@ -1,6 +1,7 @@
 import sys
 from BA10F import ProfileHMM
 
+
 class Viterbi_Graph:
     ''' Viterbi Graph Structure
     Structure for storing Profile HMM
@@ -57,8 +58,6 @@ class Viterbi_Graph:
 
         return newNode
 
-        
-
     def add_edge(self, from_node, target_node):
         ''' Add an edge
         Creates edge newEdge from 'from_node' to 'target_node' 
@@ -97,7 +96,6 @@ class Viterbi_Graph:
             if s_type == 'S':
                 s_idx = 0
             return s_type, int(s_idx) if s_idx != '' else -1
-
 
         # Determine states
         all_states = transition_matrix.keys()

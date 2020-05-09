@@ -2,6 +2,7 @@
 :rocket: Solutions for the Bioinformatics Textbook Track Problems from Rosalind 
 
 1. [Compute the Number of Times a Pattern Appears in a Text](solutions/BA1A.py)
+1. [Find the Most Frequent Words in a String](solutions/BA1B.py)
 
 
 

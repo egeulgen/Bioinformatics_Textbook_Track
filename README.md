@@ -3,6 +3,7 @@
 
 1. [Compute the Number of Times a Pattern Appears in a Text](solutions/BA1A.py)
 1. [Find the Most Frequent Words in a String](solutions/BA1B.py)
+1. [Find the Reverse Complement of a String](solutions/BA1C.py)
 
 
 

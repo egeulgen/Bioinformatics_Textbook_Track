@@ -8,6 +8,7 @@
 1. [Find Patterns Forming Clumps in a String](solutions/BA1E.py)
 1. [Find a Position in a Genome Minimizing the Skew](solutions/BA1F.py)
 1. [Compute the Hamming Distance Between Two Strings](solutions/BA1G.py)
+1. [Find All Approximate Occurrences of a Pattern in a String](solutions/BA1H.py)
 
 
 

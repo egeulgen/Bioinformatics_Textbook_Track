@@ -14,6 +14,7 @@
 1. [Generate the Frequency Array of a String](solutions/BA1K.py)
 1. [Implement PatternToNumber](solutions/BA1L.py)
 1. [Implement NumberToPattern](solutions/BA1M.py)
+1. [Generate the d-Neighborhood of a String](solutions/BA1N.py)
 
 
 

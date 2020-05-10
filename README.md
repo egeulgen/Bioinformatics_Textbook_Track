@@ -21,6 +21,8 @@
 1. [Implement GreedyMotifSearch](solutions/BA2D.py)
 1. [Implement GreedyMotifSearch with Pseudocounts](solutions/BA2E.py)
 
+1. [Implement DistanceBetweenPatternAndStrings](solutions/BA2H.py)
+
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)

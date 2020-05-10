@@ -12,6 +12,7 @@
 1. [Find the Most Frequent Words with Mismatches in a String](solutions/BA1I.py)
 1. [Find Frequent Words with Mismatches and Reverse Complements](solutions/BA1J.py)
 1. [Generate the Frequency Array of a String](solutions/BA1K.py)
+1. [Implement PatternToNumber](solutions/BA1L.py)
 
 
 

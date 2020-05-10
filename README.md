@@ -21,7 +21,7 @@
 1. [Implement GreedyMotifSearch](solutions/BA2D.py)
 1. [Implement GreedyMotifSearch with Pseudocounts](solutions/BA2E.py)
 1. [Implement RandomizedMotifSearch](solutions/BA2F.py)
-
+1. [Implement GibbsSampler](solutions/BA2G.py)
 1. [Implement DistanceBetweenPatternAndStrings](solutions/BA2H.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)

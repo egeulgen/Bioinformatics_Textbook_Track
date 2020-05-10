@@ -18,6 +18,7 @@
 1. [Implement MotifEnumeration](solutions/BA2A.py)
 1. [Find a Median String](solutions/BA2B.py)
 1. [Find a Profile-most Probable k-mer in a StringFind a Profile-most Probable k-mer in a String](solutions/BA2C.py)
+1. [Implement GreedyMotifSearch](solutions/BA2D.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

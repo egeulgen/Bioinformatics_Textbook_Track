@@ -20,6 +20,7 @@
 1. [Find a Profile-most Probable k-mer in a StringFind a Profile-most Probable k-mer in a String](solutions/BA2C.py)
 1. [Implement GreedyMotifSearch](solutions/BA2D.py)
 1. [Implement GreedyMotifSearch with Pseudocounts](solutions/BA2E.py)
+1. [Implement RandomizedMotifSearch](solutions/BA2F.py)
 
 1. [Implement DistanceBetweenPatternAndStrings](solutions/BA2H.py)
 

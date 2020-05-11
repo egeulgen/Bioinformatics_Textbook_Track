@@ -29,6 +29,7 @@
 1. [Construct the De Bruijn Graph of a String](solutions/BA3D.py)
 1. [Construct the De Bruijn Graph of a Collection of k-mers](solutions/BA3E.py)
 1. [Find an Eulerian Cycle in a Graph](solutions/BA3F.py)
+1. [Find an Eulerian Path in a Graph](solutions/BA3G.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

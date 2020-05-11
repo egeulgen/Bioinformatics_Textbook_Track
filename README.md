@@ -23,6 +23,7 @@
 1. [Implement RandomizedMotifSearch](solutions/BA2F.py)
 1. [Implement GibbsSampler](solutions/BA2G.py)
 1. [Implement DistanceBetweenPatternAndStrings](solutions/BA2H.py)
+1. [Generate the k-mer Composition of a String](solutions/BA3A.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

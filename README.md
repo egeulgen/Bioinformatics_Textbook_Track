@@ -26,6 +26,7 @@
 1. [Generate the k-mer Composition of a String](solutions/BA3A.py)
 1. [Reconstruct a String from its Genome Path](solutions/BA3B.py)
 1. [Construct the Overlap Graph of a Collection of k-mers](solutions/BA3C.py)
+1. [Construct the De Bruijn Graph of a String](solutions/BA3D.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

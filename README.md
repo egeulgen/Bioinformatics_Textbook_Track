@@ -33,7 +33,7 @@
 1. [Reconstruct a String from its k-mer Composition](solutions/BA3H.py)
 1. [Find a k-Universal Circular String](solutions/BA3I.py)
 1. [Reconstruct a String from its Paired Composition](solutions/BA3J.py)
-
+1. [Generate Contigs from a Collection of Reads](solutions/BA3K.py)
 1. [Construct a String Spelled by a Gapped Genome Path](solutions/BA3L.py)
 1. [Generate All Maximal Non-Branching Paths in a Graph](solutions/BA3M.py)
 

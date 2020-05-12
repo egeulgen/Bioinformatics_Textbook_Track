@@ -36,6 +36,7 @@
 1. [Generate Contigs from a Collection of Reads](solutions/BA3K.py)
 1. [Construct a String Spelled by a Gapped Genome Path](solutions/BA3L.py)
 1. [Generate All Maximal Non-Branching Paths in a Graph](solutions/BA3M.py)
+1. [Translate an RNA String into an Amino Acid String](solutions/BA4A.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

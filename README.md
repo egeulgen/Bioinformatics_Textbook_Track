@@ -34,6 +34,8 @@
 1. [Find a k-Universal Circular String](solutions/BA3I.py)
 1. [Reconstruct a String from its Paired Composition](solutions/BA3J.py)
 
+1. [Generate All Maximal Non-Branching Paths in a Graph](solutions/BA3M.py)
+
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)

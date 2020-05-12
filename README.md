@@ -37,6 +37,7 @@
 1. [Construct a String Spelled by a Gapped Genome Path](solutions/BA3L.py)
 1. [Generate All Maximal Non-Branching Paths in a Graph](solutions/BA3M.py)
 1. [Translate an RNA String into an Amino Acid String](solutions/BA4A.py)
+1. [Find Substrings of a Genome Encoding a Given Amino Acid String](solutions/BA4B.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

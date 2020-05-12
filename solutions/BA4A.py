@@ -14,6 +14,8 @@ def translate_rna(rna):
         protein += CODON_TABLE[codon]
         idx += 3
         codon = rna[idx:idx + 3]
+        if idx == len(rna):
+            break
     return protein
 
 

@@ -41,6 +41,7 @@
 1. [Generate the Theoretical Spectrum of a Cyclic Peptide](solutions/BA4C.py)
 1. [Compute the Number of Peptides of Given Total Mass](solutions/BA4D.py)
 1. [Find a Cyclic Peptide with Theoretical Spectrum Matching an Ideal Spectrum](solutions/BA4E.py)
+1. [Compute the Score of a Cyclic Peptide Against a Spectrum](solutions/BA4F.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

@@ -45,6 +45,8 @@
 1. [Implement LeaderboardCyclopeptideSequencing](solutions/BA4G.py)
 1. [Generate the Convolution of a Spectrum](solutions/BA4H.py)
 
+1. [Generate the Theoretical Spectrum of a Linear Peptide](solutions/BA4K.py)
+
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)

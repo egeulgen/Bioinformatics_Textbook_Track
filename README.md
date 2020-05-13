@@ -43,6 +43,7 @@
 1. [Find a Cyclic Peptide with Theoretical Spectrum Matching an Ideal Spectrum](solutions/BA4E.py)
 1. [Compute the Score of a Cyclic Peptide Against a Spectrum](solutions/BA4F.py)
 1. [Implement LeaderboardCyclopeptideSequencing](solutions/BA4G.py)
+1. [Generate the Convolution of a Spectrum](solutions/BA4H.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

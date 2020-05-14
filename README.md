@@ -47,6 +47,7 @@
 1. [Implement ConvolutionCyclopeptideSequencing](solutions/BA4I.py)
 1. [Generate the Theoretical Spectrum of a Linear Peptide](solutions/BA4J.py)
 1. [Compute the Score of a Linear Peptide](solutions/BA4K.py)
+1. [Trim a Peptide Leaderboard](solutions/BA4L.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

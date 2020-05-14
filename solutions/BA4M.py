@@ -6,7 +6,8 @@ def delta(S):
     result = []
     for i in range(len(A)):
         for j in range(len(A)):
-            result.append(A[i] - A[j])
+            if A[i] - A[j] > 0:
+                result.append(A[i] - A[j])
     result.sort()
     return result
 
@@ -67,10 +68,10 @@ if __name__ == "__main__":
     L = [int(x) for x in sys.stdin.readline().strip().split()]
 
     L_original = L[:]
+    L_original = [x for x in L_original if x > 0]
     width = L.pop(-1)
     X = {0, width}
     L = list(set([x for x in L if x > 0]))
-
     result = Place(L)
 
     print(" ".join(map(str, result)))

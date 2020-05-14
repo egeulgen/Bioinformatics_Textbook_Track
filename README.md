@@ -44,7 +44,7 @@
 1. [Compute the Score of a Cyclic Peptide Against a Spectrum](solutions/BA4F.py)
 1. [Implement LeaderboardCyclopeptideSequencing](solutions/BA4G.py)
 1. [Generate the Convolution of a Spectrum](solutions/BA4H.py)
-
+1. [Implement ConvolutionCyclopeptideSequencing](solutions/BA4I.py)
 1. [Generate the Theoretical Spectrum of a Linear Peptide](solutions/BA4J.py)
 1. [Compute the Score of a Linear Peptide](solutions/BA4K.py)
 

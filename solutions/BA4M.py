@@ -16,7 +16,7 @@ def is_multi_subset(A, B):
     return True
 
 
-def diffence(A, B):
+def difference(A, B):
     # A - B
     diffset = []
     all_elems = list(set(A))
@@ -29,37 +29,33 @@ def diffence(A, B):
 
 def Place(L):
     while L:
+        if delta(X) == L_original:
+            X.sort()
+            return X
+
         y = L.pop(-1)
 
         # place on left
         tmp = delta([y] + X)
-        if tmp == L_original:
-            res = [y] + X
-            res.sort()
-            return res
-
         if is_multi_subset(tmp, L_original):
             X.append(y)
-            L_left = diffence(L, tmp)
-            res_l = Place(L_left)
+            L_left = difference(L, tmp)
+            res_left = Place(L_left)
             X.remove(y)
-            if res_l is not None:
-                return res_l
+            if delta(res_left) == L_original:
+                res_left.sort()
+                return res_left
 
         # place on right
         tmp = delta([width - y] + X)
-        if tmp == L_original:
-            res = [y] + X
-            res.sort()
-            return res
-
         if is_multi_subset(tmp, L_original):
             X.append(width - y)
-            L_right = diffence(L, tmp)
-            res_r = Place(L_right)
+            L_right = difference(L, tmp)
+            res_right = Place(L_right)
             X.remove(width - y)
-            if res_r is not None:
-                return res_r
+            if delta(res_right) == L_original:
+                res_right.sort()
+                return res_right
     return X
 
 

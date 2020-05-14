@@ -1,11 +1,13 @@
 import sys
 
 
-def delta(A):
+def delta(S):
+    A = list(S)
     result = []
     for i in range(len(A)):
         for j in range(len(A)):
             result.append(A[i] - A[j])
+    result.sort()
     return result
 
 
@@ -19,44 +21,41 @@ def is_multi_subset(A, B):
 def difference(A, B):
     # A - B
     diffset = []
-    all_elems = list(set(A))
+    all_elems = (A)
     for elem in all_elems:
         n = A.count(elem) - B.count(elem)
         for _ in range(n):
             diffset.append(elem)
+    diffset.sort()
     return diffset
 
 
-def Place(L):
-    while L:
-        if delta(X) == L_original:
-            X.sort()
-            return X
+def Place(dist_l):
+    if len(dist_l) == 0:
+        return X
 
-        y = L.pop(-1)
+    y = dist_l.pop(-1)
 
-        # place on left
-        tmp = delta([y] + X)
-        if is_multi_subset(tmp, L_original):
-            X.append(y)
-            L_left = difference(L, tmp)
-            res_left = Place(L_left)
-            X.remove(y)
-            if delta(res_left) == L_original:
-                res_left.sort()
-                return res_left
+    # place on left
+    tmp = delta({y} | X)
+    if is_multi_subset(tmp, L_original):
+        X.add(y)
+        L_left = difference(dist_l, tmp)
+        res_left = Place(L_left)
+        if res_left:
+            return res_left
+        X.remove(y)
 
-        # place on right
-        tmp = delta([width - y] + X)
-        if is_multi_subset(tmp, L_original):
-            X.append(width - y)
-            L_right = difference(L, tmp)
-            res_right = Place(L_right)
-            X.remove(width - y)
-            if delta(res_right) == L_original:
-                res_right.sort()
-                return res_right
-    return X
+    # place on right
+    tmp = delta({width - y} | X)
+    if is_multi_subset(tmp, L_original):
+        X.add(width - y)
+        L_right = difference(dist_l, tmp)
+        res_right = Place(L_right)
+        if res_right:
+            return res_right
+        X.remove(width - y)
+    return {}
 
 
 if __name__ == "__main__":
@@ -69,9 +68,16 @@ if __name__ == "__main__":
 
     L_original = L[:]
     width = L.pop(-1)
-    X = [0, width]
-    L = [x for x in L if x > 0]
+    X = {0, width}
+    L = list(set([x for x in L if x > 0]))
 
     result = Place(L)
 
     print(" ".join(map(str, result)))
+
+    print("\n\n")
+    # print(L_original)
+    d = delta(result)
+    d.sort()
+    # print(d)
+    print(d == L_original)

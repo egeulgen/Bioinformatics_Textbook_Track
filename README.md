@@ -55,6 +55,7 @@
 1. [Find the Longest Path in a DAG](solutions/BA5D.py)
 1. [Find a Highest-Scoring Alignment of Two Strings](solutions/BA5E.py)
 1. [Find a Highest-Scoring Local Alignment of Two Strings](solutions/BA5F.py)
+1. [Compute the Edit Distance Between Two Strings](solutions/BA5G.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

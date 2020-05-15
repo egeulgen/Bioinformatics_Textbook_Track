@@ -77,53 +77,53 @@ def global_alignment(str1, str2, indel_penalty=5):
     str1 = "-" + str1
     str2 = "-" + str2
 
-    score_mat = [[0 for i in range(len(str2))] for j in range(len(str1))]
-    backtrack_mat = [[None for i in range(len(str2))] for j in range(len(str1))]
+    score_mat = [[0 for _ in range(len(str2))] for _ in range(len(str1))]
+    backtrack_mat = [[None for _ in range(len(str2))] for _ in range(len(str1))]
 
-    for i in range(len(str2)):
-        score_mat[0][i] = -5 * i
-        backtrack_mat[0][i] = "l"
+    for j in range(len(str2)):
+        score_mat[0][j] = -indel_penalty * j
+        backtrack_mat[0][j] = "l"
 
-    for j in range(len(str1)):
-        score_mat[j][0] = -5 * j
-        backtrack_mat[j][0] = "u"
+    for i in range(len(str1)):
+        score_mat[i][0] = -indel_penalty * i
+        backtrack_mat[i][0] = "u"
 
-    for i in range(1, len(str2)):
-        for j in range(1, len(str1)):
-            if (str1[j], str2[i]) in BLOSUM62:
-                key = (str1[j], str2[i])
+    for i in range(1, len(str1)):
+        for j in range(1, len(str2)):
+            if (str1[i], str2[j]) in BLOSUM62:
+                key = (str1[i], str2[j])
             else:
-                key = (str2[i], str1[j])
-            score1 = score_mat[j - 1][i - 1] + BLOSUM62[key]
-            score2 = score_mat[j - 1][i] - indel_penalty
-            score3 = score_mat[j][i - 1] - indel_penalty
-            score_mat[j][i] = max(score1, score2, score3)
-            if score_mat[j][i] == score1:
-                backtrack_mat[j][i] = "d"
-            elif score_mat[j][i] == score2:
-                backtrack_mat[j][i] = "u"
-            elif score_mat[j][i] == score3:
-                backtrack_mat[j][i] = "l"
+                key = (str2[j], str1[i])
+            score1 = score_mat[i - 1][j - 1] + BLOSUM62[key]
+            score2 = score_mat[i - 1][j] - indel_penalty
+            score3 = score_mat[i][j - 1] - indel_penalty
+            score_mat[i][j] = max(score1, score2, score3)
+            if score_mat[i][j] == score1:
+                backtrack_mat[i][j] = "d"
+            elif score_mat[i][j] == score2:
+                backtrack_mat[i][j] = "u"
+            elif score_mat[i][j] == score3:
+                backtrack_mat[i][j] = "l"
 
-    j = len(str1) - 1
-    i = len(str2) - 1
+    i = len(str1) - 1
+    j = len(str2) - 1
     aligned_1 = ""
     aligned_2 = ""
     while i != 0 or j != 0:
-        direction = backtrack_mat[j][i]
+        direction = backtrack_mat[i][j]
         if direction == "d":
-            aligned_1 = str1[j] + aligned_1
-            aligned_2 = str2[i] + aligned_2
+            aligned_1 = str1[i] + aligned_1
+            aligned_2 = str2[j] + aligned_2
             i -= 1
             j -= 1
         elif direction == "u":
-            aligned_1 = str1[j] + aligned_1
+            aligned_1 = str1[i] + aligned_1
             aligned_2 = "-" + aligned_2
-            j -= 1
+            i -= 1
         else:
             aligned_1 = "-" + aligned_1
-            aligned_2 = str2[i] + aligned_2
-            i -=1
+            aligned_2 = str2[j] + aligned_2
+            j -= 1
 
     return score_mat[len(str1) - 1][len(str2) - 1], aligned_1, aligned_2
 

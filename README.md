@@ -51,6 +51,7 @@
 1. [Solve the Turnpike Problem](solutions/BA4M.py)
 1. [Find the Minimum Number of Coins Needed to Make Change](solutions/BA5A.py)
 1. [Find the Length of a Longest Path in a Manhattan-like Grid](solutions/BA5B.py)
+1. [Find a Longest Common Subsequence of Two Strings](solutions/BA5C.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

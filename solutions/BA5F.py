@@ -42,7 +42,7 @@ PAM250 = {'A': {'A': 2, 'C': -2, 'D': 0, 'E': 0, 'F': -3, 'G': 1, 'H': -1, 'I': 
                 'P': -5, 'Q': -4, 'R': -4, 'S': -3, 'T': -3, 'V': -2, 'W': 0, 'Y': 10}}
 
 
-def global_alignment(str1, str2, indel_penalty=5):
+def local_alignment(str1, str2, indel_penalty=5):
     str1 = "-" + str1
     str2 = "-" + str2
 
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     string1 = input_lines[0]
     string2 = input_lines[1]
 
-    score, alignment1, alignment2 = global_alignment(string1, string2)
+    score, alignment1, alignment2 = local_alignment(string1, string2)
     print(score)
     print(alignment1)
     print(alignment2)

@@ -67,6 +67,7 @@
 1. [Compute the Number of Breakpoints in a Permutation](solutions/BA6B.py)
 
 1. [Implement ChromosomeToCycle](solutions/BA6F.py)
+1. [Implement CycleToChromosome](solutions/BA6G.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

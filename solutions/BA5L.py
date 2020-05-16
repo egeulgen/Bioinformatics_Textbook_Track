@@ -1,4 +1,5 @@
 import sys
+from BA5K import middle_edge
 
 BLOSUM62 = {
     ('W', 'F'): 1, ('L', 'R'): -2, ('S', 'P'): -1, ('V', 'T'): 0,
@@ -73,67 +74,76 @@ BLOSUM62 = {
 }
 
 
-def memory_efficient_alignment(str1, str2, indel_penalty=5):
-    str1 = "-" + str1
-    str2 = "-" + str2
-    S_current = [0] * len(str1)
-    for i in range(1, len(str1)):
-        S_current[i] = S_current[i - 1] - indel_penalty
-
-    for j in range(1, len(str2)):
-        S_next = [-indel_penalty * j] * len(str1)
-        for i in range(1, len(str1)):
-            if (str1[i], str2[j]) in BLOSUM62:
-                key = (str1[i], str2[j])
+def alignment_score(str1, str2, indel_penalty=5):
+    score = 0
+    for i in range(len(str1)):
+        if str1[i] == '-' or str2[i] == '-':
+            score -= indel_penalty
+        else:
+            if (str1[i], str2[i]) in BLOSUM62:
+                key = (str1[i], str2[i])
             else:
-                key = (str2[j], str1[i])
-            S_next[i] = max(S_current[i - 1] + BLOSUM62[key], S_next[i - 1] - indel_penalty, S_current[i] - indel_penalty)
-        S_current = S_next
-
-    return S_current
+                key = (str2[i], str1[i])
+            score += BLOSUM62[key]
+    return score
 
 
-def middle_edge(str1, str2, top=0, bottom=None, left=0, right=None):
+def linear_space_alignment(str1, str2, top=0, bottom=None, left=0, right=None):
     if bottom is None:
         bottom = len(str1)
     if right is None:
         right = len(str2)
-    mid_col = (right + left) // 2
-    FromSource = memory_efficient_alignment(str1[top:bottom], str2[left:mid_col])
-    ToSink = memory_efficient_alignment(str1[top:bottom][::-1], str2[mid_col:right][::-1])[::-1]
-    max_len = -1e6
-    for i in range(len(FromSource)):
-        current = FromSource[i] + ToSink[i]
-        if current > max_len:
-            max_len = current
-            idx = i
-    FromSource2 = memory_efficient_alignment(str1[top:bottom], str2[left:mid_col + 1])
-    ToSink2 = memory_efficient_alignment(str1[top:bottom][::-1], str2[mid_col + 1:right][::-1])[::-1]
-    max_len = -1e6
-    for i in range(len(FromSource2)):
-        current = FromSource2[i] + ToSink2[i]
-        if current > max_len:
-            max_len = current
-            idx2 = i
 
-    if idx2 == idx + 1:
-        return "D", (idx + top, mid_col), (idx + top + 1, mid_col + 1)
-    if idx2 == idx:
-        return "H", (idx + top, mid_col), (idx + top, mid_col + 1)
-    return "V", (idx + top, mid_col), (idx + top + 1, mid_col)
+    if left == right:
+        return "V" * (bottom - top)
+    if top == bottom:
+        return "H" * (right - left)
+
+    mid_edge, mid_from, mid_to = middle_edge(str1, str2, top, bottom, left, right)
+    # Left
+    midNode, middle = mid_from
+    pathL = linear_space_alignment(str1, str2, top, midNode, left, middle)
+    # Right
+    midNode, middle = mid_to
+    pathR = linear_space_alignment(str1, str2, midNode, bottom, middle, right)
+    return pathL + mid_edge + pathR
+
+
+def backtrack_path(path, str1, str2):
+    aligned1 = ''
+    aligned2 = ''
+    i = 0
+    j = 0
+    for arrow in path:
+        if arrow == "D":
+            aligned1 += str1[i]
+            aligned2 += str2[j]
+            i += 1
+            j += 1
+        elif arrow == "V":
+            aligned1 += str1[i]
+            aligned2 += '-'
+            i += 1
+        else:
+            aligned1 += '-'
+            aligned2 += str2[j]
+            j += 1
+    return aligned1, aligned2
 
 
 if __name__ == "__main__":
     '''
-    Given: Two amino acid strings.
-    Return: A middle edge in the alignment graph of these strings, where the optimal path is defined by the BLOSUM62 
-    scoring matrix and a linear indel penalty equal to 5. Return the middle edge in the form “(i, j) (k, l)”, where 
-    (i, j) connects to (k, l).
+    Given: Two long amino acid strings (of length approximately 10,000).
+    Return: The maximum alignment score of these strings, followed by an alignment achieving this maximum score. Use the BLOSUM62 scoring matrix and indel penalty σ = 5.
     '''
     input_lines = sys.stdin.read().splitlines()
     string1 = input_lines[0]
     string2 = input_lines[1]
 
-    _, mid_edge_from, mid_edge_to = middle_edge(string1, string2)
+    path = linear_space_alignment(string1, string2)
 
-    print(f"({mid_edge_from[0]}, {mid_edge_from[1]}) ({mid_edge_to[0]}, {mid_edge_to[1]})")
+    alignment1, alignment2 = backtrack_path(path, string1, string2)
+
+    print(alignment_score(alignment1, alignment2))
+    print(alignment1)
+    print(alignment2)

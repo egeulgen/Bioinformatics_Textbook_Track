@@ -60,6 +60,7 @@
 1. [Find a Highest-Scoring Overlap Alignment of Two Strings](solutions/BA5I.py)
 1. [Align Two Strings Using Affine Gap Penalties](solutions/BA5J.py)
 1. [Find a Middle Edge in an Alignment Graph in Linear Space](solutions/BA5K.py)
+1. [Align Two Strings Using Linear Space](solutions/BA5L.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

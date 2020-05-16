@@ -67,7 +67,7 @@
 1. [Compute the Number of Breakpoints in a Permutation](solutions/BA6B.py)
 1. [Compute the 2-Break Distance Between a Pair of Genomes](solutions/BA6C.py)
 1. [Find a Shortest Transformation of One Genome into Another by 2-Breaks](solutions/BA6D.py)
-
+1. [Find All Shared k-mers of a Pair of Strings](solutions/BA6E.py)
 1. [Implement ChromosomeToCycle](solutions/BA6F.py)
 1. [Implement CycleToChromosome](solutions/BA6G.py)
 1. [Implement ColoredEdges](solutions/BA6H.py)

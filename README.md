@@ -66,6 +66,8 @@
 1. [Implement GreedySorting to Sort a Permutation by Reversals](solutions/BA6A.py)
 1. [Compute the Number of Breakpoints in a Permutation](solutions/BA6B.py)
 
+1. [Implement ChromosomeToCycle](solutions/BA6F.py)
+
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)

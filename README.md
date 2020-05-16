@@ -58,6 +58,7 @@
 1. [Compute the Edit Distance Between Two Strings](solutions/BA5G.py)
 1. [Find a Highest-Scoring Fitting Alignment of Two Strings](solutions/BA5H.py)
 1. [Find a Highest-Scoring Overlap Alignment of Two Strings](solutions/BA5I.py)
+1. [Align Two Strings Using Affine Gap Penalties](solutions/BA5J.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

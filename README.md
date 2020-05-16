@@ -64,6 +64,7 @@
 1. [Find a Highest-Scoring Multiple Sequence Alignment](solutions/BA5M.py)
 1. [Find a Topological Ordering of a DAG](solutions/BA5N.py)
 1. [Implement GreedySorting to Sort a Permutation by Reversals](solutions/BA6A.py)
+1. [Compute the Number of Breakpoints in a Permutation](solutions/BA6B.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

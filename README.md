@@ -65,6 +65,7 @@
 1. [Find a Topological Ordering of a DAG](solutions/BA5N.py)
 1. [Implement GreedySorting to Sort a Permutation by Reversals](solutions/BA6A.py)
 1. [Compute the Number of Breakpoints in a Permutation](solutions/BA6B.py)
+1. [Compute the 2-Break Distance Between a Pair of Genomes](solutions/BA6C.py)
 
 1. [Implement ChromosomeToCycle](solutions/BA6F.py)
 1. [Implement CycleToChromosome](solutions/BA6G.py)

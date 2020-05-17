@@ -103,6 +103,7 @@
 1. [Find All Approximate Occurrences of a Collection of Patterns in a String](solutions/BA9O.py)
 1. [Implement TreeColoring](solutions/BA9P.py)
 1. [Construct the Partial Suffix Array of a String](solutions/BA9Q.py)
+1. [Construct a Suffix Tree from a Suffix Array](solutions/BA9R.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

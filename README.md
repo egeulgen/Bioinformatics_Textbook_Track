@@ -98,6 +98,7 @@
 1. [Reconstruct a String from its Burrows-Wheeler Transform](solutions/BA9J.py)
 1. [Generate the Last-to-First Mapping of a String](solutions/BA9K.py)
 1. [Implement BWMatching](solutions/BA9L.py)
+1. [Implement BetterBWMatching](solutions/BA9M.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

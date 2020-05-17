@@ -100,6 +100,7 @@
 1. [Implement BWMatching](solutions/BA9L.py)
 1. [Implement BetterBWMatching](solutions/BA9M.py)
 1. [Find All Occurrences of a Collection of Patterns in a String](solutions/BA9N.py)
+1. [Find All Approximate Occurrences of a Collection of Patterns in a String](solutions/BA9O.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

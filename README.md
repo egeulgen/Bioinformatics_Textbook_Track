@@ -82,6 +82,7 @@
 1. [Implement SmallParsimony](solutions/BA7F.py)
 1. [Adapt SmallParsimony to Unrooted Trees](solutions/BA7G.py)
 1. [Implement FarthestFirstTraversal](solutions/BA8A.py)
+1. [Compute the Squared Error Distortion](solutions/BA8B.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

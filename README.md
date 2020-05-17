@@ -93,6 +93,7 @@
 1. [Find the Longest Substring Shared by Two Strings](solutions/BA9E.py)
 1. [Find the Shortest Non-Shared Substring of Two Strings](solutions/BA9F.py)
 1. [Construct the Suffix Array of a String](solutions/BA9G.py)
+1. [Pattern Matching with the Suffix Array](solutions/BA9H.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

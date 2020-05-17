@@ -1,5 +1,6 @@
 import sys
 
+
 def HiddenPathProbability(hidden_path, transition_matrix):
     ''' Probability of a Hidden Path Problem
     Input: A hidden path π followed by the states States and transition matrix Transition 
@@ -17,6 +18,7 @@ def HiddenPathProbability(hidden_path, transition_matrix):
         prob_path *= transition_matrix[hidden_path[idx - 1]][hidden_path[idx]]
 
     return prob_path
+
 
 if __name__ == "__main__":
 

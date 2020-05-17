@@ -166,7 +166,7 @@ class Tree:
 
     def __str__(self):
         ''' Custom __str__ method
-        For printing the Trie as an adjacency list
+        For printing the Tree as an adjacency list
         '''
         # header
         res = 'From->To:position:length\n\n'

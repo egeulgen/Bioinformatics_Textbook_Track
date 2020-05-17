@@ -89,6 +89,7 @@
 1. [Construct a Trie from a Collection of Patterns](solutions/BA9A.py)
 1. [Implement TrieMatching](solutions/BA9B.py)
 1. [Construct the Suffix Tree of a String](solutions/BA9C.py)
+1. [Find the Longest Repeat in a String](solutions/BA9D.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

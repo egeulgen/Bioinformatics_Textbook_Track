@@ -78,6 +78,7 @@
 1. [Compute Limb Lengths in a Tree](solutions/BA7B.py)
 1. [Implement AdditivePhylogeny](solutions/BA7C.py)
 1. [Implement UPGMA](solutions/BA7D.py)
+1. [Implement the Neighbor Joining Algorithm](solutions/BA7E.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

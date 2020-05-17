@@ -80,6 +80,7 @@
 1. [Implement UPGMA](solutions/BA7D.py)
 1. [Implement the Neighbor Joining Algorithm](solutions/BA7E.py)
 1. [Implement SmallParsimony](solutions/BA7F.py)
+1. [Adapt SmallParsimony to Unrooted Trees](solutions/BA7G.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

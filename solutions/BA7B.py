@@ -12,6 +12,7 @@ def limb_length(distance_mat, j, n_leaves):
             ll.append((distance_mat[i][j] + distance_mat[j][k] - distance_mat[i][k]) / 2)
     return min(ll)
 
+
 if __name__ == "__main__":
     '''
     Given: An integer n, followed by an integer j between 0 and n - 1, followed by a space-separated additive distance 

@@ -76,6 +76,7 @@
 1. [Implement 2-BreakOnGenome](solutions/BA6K.py)
 1. [Compute Distances Between Leaves](solutions/BA7A.py)
 1. [Compute Limb Lengths in a Tree](solutions/BA7B.py)
+1. [Implement AdditivePhylogeny](solutions/BA7C.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

@@ -141,7 +141,7 @@ class Tree:
         # terminate current path (if non-empty) and add to suffix tree
         if len(path) != 0:
             new_tree_node = self.add_node()
-            newEdge = self.add_edge(tree_node, new_tree_node, path[0].position, len(path))
+            _ = self.add_edge(tree_node, new_tree_node, path[0].position, len(path))
             tree_node = new_tree_node
 
         # if trie node is a leaf, add indicator to tree leaf and stop
@@ -277,7 +277,7 @@ class Trie:
                     # add a new node newNode to Trie
                     newNode = self.add_node()
                     # add an edge from currentNode to newNode, labeled by currentSymbol and position j
-                    newEdge = self.add_edge(currentNode, newNode, currentSymbol, j)
+                    _ = self.add_edge(currentNode, newNode, currentSymbol, j)
 
                     currentNode = newNode
 

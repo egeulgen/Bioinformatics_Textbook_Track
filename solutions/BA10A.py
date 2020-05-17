@@ -2,14 +2,6 @@ import sys
 
 
 def HiddenPathProbability(hidden_path, transition_matrix):
-    ''' Probability of a Hidden Path Problem
-    Input: A hidden path π followed by the states States and transition matrix Transition 
-    of an HMM (Σ, States, Transition, Emission).
-    Output: The probability of this path, Pr(π).
-
-    Note: You may assume that transitions from the initial state occur with equal probability.
-    '''
-
     # initial probability
     prob_path = .5
 
@@ -21,7 +13,11 @@ def HiddenPathProbability(hidden_path, transition_matrix):
 
 
 if __name__ == "__main__":
-
+    '''
+    Given: A hidden path π followed by the states States and transition matrix Transition of an HMM (Σ, States, 
+    Transition, Emission).
+    Return: The probability of this path, Pr(π). You may assume that initial probabilities are equal.
+    '''
     tmp = sys.stdin.read().splitlines()
 
     hidden_path = tmp[0]

@@ -86,6 +86,7 @@
 1. [Implement the Lloyd Algorithm for k-Means Clustering](solutions/BA8C.py)
 1. [Implement the Soft k-Means Clustering Algorithm](solutions/BA8D.py)
 1. [Implement Hierarchical Clustering](solutions/BA8E.py)
+1. [Construct a Trie from a Collection of Patterns](solutions/BA9A.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

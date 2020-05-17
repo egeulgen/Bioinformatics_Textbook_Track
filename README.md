@@ -73,6 +73,7 @@
 1. [Implement ColoredEdges](solutions/BA6H.py)
 1. [Implement GraphToGenome](solutions/BA6I.py)
 1. [Implement 2-BreakOnGenomeGraph](solutions/BA6J.py)
+1. [Implement 2-BreakOnGenome](solutions/BA6K.py)
 
 1. [Compute the Probability of a Hidden Path](solutions/BA10A.py)
 

@@ -115,3 +115,4 @@
 1. [Implement Viterbi Learning](solutions/BA10I.py)
 1. [Solve the Soft Decoding Problem](solutions/BA10J.py)
 1. [Implement Baum-Welch Learning](solutions/BA10K.py)
+1. [Construct the Graph of a Spectrum](solutions/BA11A.py)

@@ -118,3 +118,4 @@
 1. [Construct the Graph of a Spectrum](solutions/BA11A.py)
 1. [Implement DecodingIdealSpectrum](solutions/BA11B.py)
 1. [Convert a Peptide into a Peptide Vector](solutions/BA11C.py)
+1. [Convert a Peptide Vector into a Peptide](solutions/BA11D.py)

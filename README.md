@@ -112,3 +112,4 @@
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)
 1. [Perform a Multiple Sequence Alignment with a Profile HMM](solutions/BA10G.py)
 1. [Estimate the Parameters of an HMM](solutions/BA10H.py)
+1. [Implement Viterbi Learning](solutions/BA10I.py)

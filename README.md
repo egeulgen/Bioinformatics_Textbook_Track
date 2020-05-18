@@ -122,3 +122,4 @@
 1. [Sequence a Peptide](solutions/BA11E.py)
 1. [Find a Highest-Scoring Peptide in a Proteome against a Spectrum](solutions/BA11F.py)
 1. [Implement PSMSearch](solutions/BA11G.py)
+1. [Compute the Size of a Spectral Dictionary](solutions/BA11H.py)

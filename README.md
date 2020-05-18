@@ -109,6 +109,6 @@
 1. [Implement the Viterbi Algorithm](solutions/BA10C.py)
 1. [Compute the Probability of a String Emitted by an HMM](solutions/BA10D.py)
 1. [Construct a Profile HMM](solutions/BA10E.py)
-
 1. [Construct a Profile HMM with Pseudocounts](solutions/BA10F.py)
 1. [Perform a Multiple Sequence Alignment with a Profile HMM](solutions/BA10G.py)
+1. [Estimate the Parameters of an HMM](solutions/BA10H.py)

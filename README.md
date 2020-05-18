@@ -124,3 +124,4 @@
 1. [Implement PSMSearch](solutions/BA11G.py)
 1. [Compute the Size of a Spectral Dictionary](solutions/BA11H.py)
 1. [Compute the Probability of a Spectral Dictionary](solutions/BA11I.py)
+1. [Find a Highest-Scoring Modified Peptide against a Spectrum](solutions/BA11J.py)

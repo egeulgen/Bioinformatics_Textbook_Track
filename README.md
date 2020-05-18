@@ -120,3 +120,4 @@
 1. [Convert a Peptide into a Peptide Vector](solutions/BA11C.py)
 1. [Convert a Peptide Vector into a Peptide](solutions/BA11D.py)
 1. [Sequence a Peptide](solutions/BA11E.py)
+1. [Find a Highest-Scoring Peptide in a Proteome against a Spectrum](solutions/BA11F.py)

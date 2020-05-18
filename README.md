@@ -114,3 +114,4 @@
 1. [Estimate the Parameters of an HMM](solutions/BA10H.py)
 1. [Implement Viterbi Learning](solutions/BA10I.py)
 1. [Solve the Soft Decoding Problem](solutions/BA10J.py)
+1. [Implement Baum-Welch Learning](solutions/BA10K.py)

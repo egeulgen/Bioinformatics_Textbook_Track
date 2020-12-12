@@ -1,4 +1,4 @@
-# Rosalind Bioinformatics Stronghold
+# Rosalind Bioinformatics Textbook Track
 :rocket: Solutions for the Bioinformatics Textbook Track Problems from Rosalind 
 
 1. [Compute the Number of Times a Pattern Appears in a Text](solutions/BA1A.py)
